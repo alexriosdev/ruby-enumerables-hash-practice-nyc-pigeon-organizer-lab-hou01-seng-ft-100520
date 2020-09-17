@@ -5,7 +5,7 @@ def nyc_pigeon_organizer(data)
     attribute_value.each do |inner_key, names|
       names.each do |name|
         if !final_array[name]
-          final_array = {}
+          final_array[name] = {}
         end
         if !final_array[name][attribute_key]
           !final_array[name][attribute_key] = []
