@@ -2,7 +2,13 @@ def nyc_pigeon_organizer(data)
   # write your code here!
   
   data.each_with_object({}) do |(attribute_key, attribute_value), final_array|
-    attribute_value.each do 
+    attribute_value.each do |inner_key, names|
+      names.each do |name|
+        if !final_array[name]
+          final_array = {}
+        end
+        if !final_array[name]
+        
   
   
   
