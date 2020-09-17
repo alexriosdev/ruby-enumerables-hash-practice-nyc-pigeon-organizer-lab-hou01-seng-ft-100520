@@ -6,7 +6,7 @@ def nyc_pigeon_organizer(data)
 end
 
 
-
+# EXPECTED RESULT
       pigeon_data = {
         :color => {
           :purple => ["Theo", "Peter Jr.", "Lucky"],
@@ -27,6 +27,7 @@ end
       }
 
 
+# WE HAVE THIS
 
 {
   "Theo" => {
