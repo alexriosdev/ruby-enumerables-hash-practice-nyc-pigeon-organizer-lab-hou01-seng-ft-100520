@@ -28,7 +28,7 @@ def nyc_pigeon_organizer(data)
         pigeon_list[name][attribute_key] << trait.to_s
       end
     end
-  pigeon_list
   end
+  pigeon_list
   
 end
