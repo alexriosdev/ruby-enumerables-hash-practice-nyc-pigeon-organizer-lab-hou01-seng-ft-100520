@@ -8,71 +8,73 @@ def nyc_pigeon_organizer(data)
           final_array = {}
         end
         if !final_array[name][attribute_key]
-          
-        
-  
-  
+          !final_array[name][attribute_key] = []
+        end
+        final_array[name][attribute_key] << inner_key.to_s
+      end
+    end
+  end
   
 end
 
 
 # EXPECTED RESULT
-      pigeon_data = {
-        :color => {
-          :purple => ["Theo", "Peter Jr.", "Lucky"],
-          :grey => ["Theo", "Peter Jr.", "Ms. K"],
-          :white => ["Queenie", "Andrew", "Ms. K", "Alex"],
-          :brown => ["Queenie", "Alex"]
-        },
-        :gender => {
-          :male => ["Alex", "Theo", "Peter Jr.", "Andrew", "Lucky"],
-          :female => ["Queenie", "Ms. K"]
-        },
-        :lives => {
-          "Subway" => ["Theo", "Queenie"],
-          "Central Park" => ["Alex", "Ms. K", "Lucky"],
-          "Library" => ["Peter Jr."],
-          "City Hall" => ["Andrew"]
-        }
-      }
+      # pigeon_data = {
+      #   :color => {
+      #     :purple => ["Theo", "Peter Jr.", "Lucky"],
+      #     :grey => ["Theo", "Peter Jr.", "Ms. K"],
+      #     :white => ["Queenie", "Andrew", "Ms. K", "Alex"],
+      #     :brown => ["Queenie", "Alex"]
+      #   },
+      #   :gender => {
+      #     :male => ["Alex", "Theo", "Peter Jr.", "Andrew", "Lucky"],
+      #     :female => ["Queenie", "Ms. K"]
+      #   },
+      #   :lives => {
+      #     "Subway" => ["Theo", "Queenie"],
+      #     "Central Park" => ["Alex", "Ms. K", "Lucky"],
+      #     "Library" => ["Peter Jr."],
+      #     "City Hall" => ["Andrew"]
+      #   }
+      # }
 
 
 # WE HAVE THIS
 
-{
-  "Theo" => {
-    :color => ["purple", "grey"],
-    :gender => ["male"],
-    :lives => ["Subway"]
-  },
-  "Peter Jr." => {
-    :color => ["purple", "grey"],
-    :gender => ["male"],
-    :lives => ["Library"]
-  },
-  "Lucky" => {
-    :color => ["purple"],
-    :gender => ["male"],
-    :lives => ["Central Park"]
-  },
-  "Ms .K" => {
-    :color => ["grey", "white"],
-    :gender => ["female"],
-    :lives => ["Central Park"]
-  },
-  "Queenie" => {
-    :color => ["white", "brown"],
-    :gender => ["female"],
-    :lives => ["Subway"]
-  },
-  "Andrew" => {
-    :color => ["white"],
-    :gender => ["male"],
-    :lives => ["City Hall"]
-  },
-  "Alex" => {
-    :color => ["white", "brown"],
-    :gender => ["male"],
-    :lives => ["Central Park"]
-  }
-}
+# {
+#   "Theo" => {
+#     :color => ["purple", "grey"],
+#     :gender => ["male"],
+#     :lives => ["Subway"]
+#   },
+#   "Peter Jr." => {
+#     :color => ["purple", "grey"],
+#     :gender => ["male"],
+#     :lives => ["Library"]
+#   },
+#   "Lucky" => {
+#     :color => ["purple"],
+#     :gender => ["male"],
+#     :lives => ["Central Park"]
+#   },
+#   "Ms .K" => {
+#     :color => ["grey", "white"],
+#     :gender => ["female"],
+#     :lives => ["Central Park"]
+#   },
+#   "Queenie" => {
+#     :color => ["white", "brown"],
+#     :gender => ["female"],
+#     :lives => ["Subway"]
+#   },
+#   "Andrew" => {
+#     :color => ["white"],
+#     :gender => ["male"],
+#     :lives => ["City Hall"]
+#   },
+#   "Alex" => {
+#     :color => ["white", "brown"],
+#     :gender => ["male"],
+#     :lives => ["Central Park"]
+#   }
+# }
